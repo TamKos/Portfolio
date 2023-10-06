@@ -1,0 +1,629 @@
+/***************GENERAL***************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: #ffff78;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    font-family: josefinSans;
+    font-size: 20px;
+}
+
+.rovcina {
+    //max-width: 1415px;
+    margin: 0 auto;
+}
+
+.rov-95 {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: inherit;
+    width: inherit;
+}
+
+@font-face {
+    font-family: josefinSans;
+    src: url(vendors/fonts/josefinsans-light.ttf)
+}
+
+/******* REFUSABLE COMPONENTS *******/
+
+ul li {
+    list-style: none;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 1414px;
+    margin: 0 auto;
+}
+
+/***** HEADINGS *****/
+
+h1 {
+    margin: 0 auto;
+    color: #dadada;
+    font-size: 240%;
+    margin-top: 7%;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.naslov {
+    font-size: 250%;
+    word-spacing: 2px; //margin: 30px 0 0 0;
+    letter-spacing: 1px;
+    color: #dadada; //text-transform: uppercase;
+    text-align: center;
+}
+
+.naslov-tamni {
+    font-size: 250%;
+    word-spacing: 2px; //margin: 30px 0 0 0;
+    letter-spacing: 1px;
+    color: #313131; //text-transform: uppercase;
+    text-align: center;
+}
+/*
+
+.naslov-tamni:hover,
+.naslov:hover {
+    color: #ffff78;
+    cursor: default;
+}
+*/
+
+h2 {
+    font-size: 250%;
+    word-spacing: 2px;
+    margin: 40px 0 0 0;
+    letter-spacing: 1px;
+    color: #dadada;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 160%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    color: #313131;
+}
+
+h3::after {
+    content: "  ";
+    display: flex;
+    height: 1px;
+    background-color: #ffff78;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 150%;
+    color: #ffff78;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #1c0303;
+}
+
+h6 {
+    font-size: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #d7d7d7;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h6:after {
+    content: "  ";
+    display: flex;
+    height: 2px;
+    background-color: #d7d7d7;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/*
+h2:after{
+    content: "  ";
+    display: block;
+    height: 2px;
+    background-color: rgb(134, 88, 144);
+    width: 20px;
+    //margin: 0 auto;
+    margin-top: 30px;
+}
+*/
+
+/***** LINKS *****/
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {}
+
+/****/
+
+
+.visina-naslova {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.podvlaka {
+    display: flex;
+    justify-content: center; //margin-bottom: 30px;
+}
+
+.podvlaka img {
+    width: 200px;
+}
+
+
+/********** PORTFOLIO **********/
+
+.portfolio {
+    display: flex;
+    background-color: #d7d7d7;
+}
+
+.portfolio-back {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.port-fut {
+    display: flex;
+    position: relative;
+    top: 20px;
+    height: 20vh;
+    width: 100%;
+    background-color: #313131;
+}
+
+.port-fut img {
+    //width: 150px;
+}
+
+.portfolio-img {
+    padding: 0 60px;
+    opacity: 0.7;
+        transition: all 0.9s ease;
+        /* overflow: hidden; */
+}
+
+/* .portfolio-img img {
+    transition: bottom 5s ease;
+    position: relative;
+    width:100%;
+    bottom: 0px;
+}
+
+.portfolio-img:hover img {
+    bottom: 2439px;
+} */
+
+.portfolio-img:hover {
+    opacity: 1;
+}
+
+.portfolio-img .span-1-of-2 img {
+    width: 100%;
+    box-shadow: 2px 2px 12px #0000006b;
+}
+
+.portfolio-mouse {
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 50px;
+}
+
+.portfolio-mouse img {
+    width: 55px;
+    margin-right: 17px;
+}
+
+.portfolio-zoom {
+    //position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-image: url(resources/img/pozadina-sace.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    //display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-zoom .img-opis img {
+    width: 100%;
+    padding: 10px;
+}
+
+.portfolio-zoom p {
+    text-align: center;
+    color: #d7d7d7;
+}
+
+.portfolio-zoom .img-opis p::after {
+    content: url(resources/img/fix-podvlaka.png);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+}
+
+.komentar p {
+    text-align: justify;
+    text-indent: 15px;
+    padding: 0px 20px;
+    word-break: break-all;
+}
+
+
+
+.portfolio-rights img {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .komentar p {
+        padding: 0px 10px;
+    }
+    .portfolio-zoom {
+        font-size: 75%;
+    }
+}
+
+/***** FIX-MENU *****/
+
+.fix-menu {
+    //position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-image: url(resources/img/pozadina-sace.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    //display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px black;
+}
+
+.fix-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fix-menu ul li {
+    font-size: 110%;
+    color: #d7d7d7;
+    text-align: center;
+}
+
+.fix-menu ul li:hover {
+    color: #ffff78;
+}
+
+.fix-menu ul li::after {
+    content: url(resources/img/fix-podvlaka.png);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -25px;
+    width: 100%;
+}
+
+.fix-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fix-logo img {
+    //padding: 20px;
+    width: 50%;
+}
+
+.fix-social ion-icon {
+    width: 100%;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .fix-social .span-1-of-3 {
+        //width: 100%;
+    }
+    .fix-social ion-icon {
+        //font-size: 250%;
+    }
+    .fix-menu ul li {
+        font-size: 85%;
+    }
+    .fix-menu ul li::after {
+        top: -15px;
+    }
+    .fix-logo img {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+
+
+/********** FOOTER **********/
+
+/*** big footer ***/
+
+.big-footer {
+    background-color: #d7d7d7;
+    height: auto;
+    color: #313131;
+    box-shadow: inset 0px 5px 8px #313131; //padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .big-footer .col ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .big-footer .col div strong {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.h1-footer {
+    font-size: 130%;
+    color: #313131;
+    text-transform: uppercase;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.big-footer .row {
+    max-width: 1000px;
+}
+
+.big-footer .col {
+    //padding: 0 100px;
+}
+
+.big-footer .col ul li {
+    padding: 10px 0;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap .big {
+    min-width: 300px;
+}
+
+.little-footer .wrap .big {
+    padding: 40px 0;
+}
+
+/*** little footer ***/
+
+.little-footer {
+    background-color: #313131;
+    background-image: url(resources/img/pozadina-sace.jpg);
+    height: auto;
+    color: #d7d7d7;
+    box-shadow: 5px -5px 6px #313131;
+}
+
+.little-footer-onama {
+    background-color: #313131;
+    background-image: url(resources/img/pozadina-sace.jpg);
+    height: auto;
+    width: 20%;
+    color: #d7d7d7;
+    box-shadow: 5px -5px 6px #313131;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-konakt,
+.little-logo,
+.little-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-konakt,
+.little-social {
+    padding: 20px 0;
+}
+
+.little-logo img {
+    width: 150px;
+}
+
+.little-logo p {
+    font-size: 80%;
+}
+
+.footer-social {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 942px) {
+    .little-logo {
+        order: 1;
+    }
+}
+
+
+/*****NE ^ TAKO *****/
+
+.span-hours,
+.span-minutes,
+.span-day {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/***** Let's get this party started *****/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    //-webkit-border-radius: 10px;
+    //border-radius: 10px;
+    background: #313131;
+    //-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #313131;
+}
+
+/* ? **********************/
+/* ? STRELICA BACK TO TOP */
+/* ? **********************/
+/* .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  .back-to-top {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 30px;
+  }
+  
+  .strelica {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   */
