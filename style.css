@@ -281,6 +281,8 @@ a:active {}
 .portfolio-img .span-1-of-2 img {
     width: 100%;
     box-shadow: 2px 2px 12px #0000006b;
+    height: 350px;
+    object-fit: cover;
 }
 
 .portfolio-mouse {
